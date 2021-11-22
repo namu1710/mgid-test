@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+}
+body{
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    background-color: #2C3E50;
+    padding: 10px 0 10px 0;
+    
+}
+.container{
+    padding: 0 203px 0 203px;
+    @media screen and(max-width:1480px){
+        padding: 0 103px 0 103px;
+    }
+    @media screen and(max-width:1280px){
+        padding: 0 43px 0 43px;
+    }
+    @media screen and(max-width:620px){
+        padding: 0 13px 0 13px;
+    }
+}
+.header-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo{
+    background-color: #FFFFFF;
+    max-width: 140px;
+    padding: 11px 25px 11px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and(max-width:540px) {
+        max-width: 80px;
+        padding: 6px 15px 6px 15px;
+    }
+    @media screen and(max-width:340px) {
+        max-width: 80px;
+        padding: 4px 10px 4px 10px;
+    }
+}
+.header-logo span{
+    font-family: 'Roboto-black';
+    font-size: 25px;
+    color: #27AE60;
+    text-transform: uppercase;
+    @media screen and(max-width:540px) {
+        font-size: 15px;
+    }
+}
+.header-nav-menu{
+    display: flex;
+    align-items: center;
+    @media screen and(max-width:380px) {
+        padding: 0;
+    }
+}
+.header-nav-menu li{
+    margin-right: 35px;
+    @media screen and(max-width:450px) {
+        margin-right: 20px;
+    }
+    @media screen and(max-width:380px) {
+        margin-right: 10px;
+    }
+}
+.header-nav-menu li:nth-last-child(1){
+    margin-right: 0;
+}
+.header-nav-menu li a{
+    color: #DADDE0;
+    font-family: 'Roboto-Regular';
+    font-size: 15px;
+}
+.header-btn{
+    background-color: #25A55B;
+    max-width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 20px 11px 20px;
+    border-radius: 5px;
+    @media screen and(max-width:540px) {
+        padding: 6px 10px 6px 10px;
+    }
+}
+.header-btn:hover{
+    background-color: #32B86A;
+}
+.header-btn span{
+    font-family: 'Roboto-Medium';
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #FBFDFB;
+    @media screen and(max-width:540px) {
+        font-size: 10px;
+    }
+}
